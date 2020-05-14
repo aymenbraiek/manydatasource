@@ -17,7 +17,7 @@ import java.util.Map;
 @RequestMapping("/biat")
 public class BeerController {
     private final static String query = "select * from beer_inventory where version=?";
-    private final static String querybeer = "secel * from beer where beer_name=? ";
+    private final static String querybeer = "select * from beer where beer_name=? ";
     private List<Map<String, Object>> listeallbeer = new ArrayList<>();
     @Autowired
     @Qualifier("BeerinvJdbcTemplate")
